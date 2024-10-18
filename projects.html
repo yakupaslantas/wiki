@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Projects | Yakup Aslantas' Project Page</title>
+    </head>
+    <body>
+        <div class="mobile-topbar" id="mobileTopbar">
+            <img src="res/hamburger.png" onclick="openNav()">
+            <p>yakupaslantas</p>
+            <div id="innerMenu">
+                <a href="index.html"><p>Home</p></a>
+                <p>Projects</p>
+                <a href="aboutme.html"><p>About me</p></a>
+                <button onclick="closeNav()">Close</button>
+            </div>
+        </div>
+        <div id="blurOverlay" style="transition-duration: 0.5s;">
+
+        </div>
+        <div style="position: relative; width: 100%; height: 100%;">
+            <div onclick="triggeranim()" class="sidepanel-changelog-button" id="changelogButton">
+                <p>Changelog</p>
+                <div class="inner-changelog" id="changelogContent">
+                    <h2>v0.0.1</h2>
+                    <ul>
+                        <li>Initial release </li>
+                    </ul>
+                    <button onclick="closeDialog()">Close</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidepanel">
+            <h1>Navigate</h1>
+            <button><p>Home</p></button>
+            <button class="sidepanel-selected"><p>Projects</p></button>
+            <button><p>About Me</p></button>
+            <p id="sidepanelVersionText" class="sidepanel-version-text">Loading version info...</p>
+        </div>
+        <h1 class="homepagetitle">Projects</h1>
+        <div class="project-card">
+            <h1>Main Website</h1>
+            <p>This project aims to organize and present all my projects and their documentation on a website.</p>
+            <ul>
+                <li>Web Application</li>
+                <li style="font-family: monospace;">antalia</li>
+                <li>v0.0.1</li>
+            </ul>
+            <div>
+                
+                <button><strong>Github Page</strong></button>
+                <a href="projects/antalia.html"><button><strong>Check out!</strong></button></a>
+
+            </div>
+        </div>
+    </body>
+</html>
