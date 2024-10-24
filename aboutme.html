@@ -24,6 +24,12 @@
             <div onclick="triggeranim()" class="sidepanel-changelog-button" id="changelogButton">
                 <p>Changelog</p>
                 <div class="inner-changelog" id="changelogContent">
+                    <h2>v0.0.2</h2>
+                    <ul>
+                        <li>Fixed side navigation panel not working on desktop devices</li>
+                        <li>Remove unwanted margin in aboutme page</li>
+                        <li>Fix missing some options in side navigation panel</li>
+                    </ul>
                     <h2>v0.0.1</h2>
                     <ul>
                         <li>Initial release </li>
@@ -34,7 +40,8 @@
         </div>
         <div class="sidepanel">
             <h1>Navigate</h1>
-            <button><p>Home</p></button>
+            <a href="index.html"><button><p>Home</p></button></a>
+            <a href="projects.html"><button><p>Projects</p></button></a>
             <button class="sidepanel-selected"><p>About Me</p></button>
             <p id="sidepanelVersionText" class="sidepanel-version-text">Loading version info...</p>
         </div>
@@ -54,6 +61,5 @@
             I live in Turkiye, Istanbul. I know Turkish and English but I am not very good at writing as you can see
             I am gonna improve myself.
         </p>
-        <div style="margin-top: 1000px;"></div>
     </body>
 </html>

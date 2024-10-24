@@ -24,6 +24,12 @@
             <div onclick="triggeranim()" class="sidepanel-changelog-button" id="changelogButton">
                 <p>Changelog</p>
                 <div class="inner-changelog" id="changelogContent">
+                    <h2>v0.0.2</h2>
+                    <ul>
+                        <li>Fixed side navigation panel not working on desktop devices</li>
+                        <li>Remove unwanted margin in aboutme page</li>
+                        <li>Fix missing some options in side navigation panel</li>
+                    </ul>
                     <h2>v0.0.1</h2>
                     <ul>
                         <li>Initial release </li>
@@ -34,8 +40,9 @@
         </div>
         <div class="sidepanel">
             <h1>Navigate</h1>
-            <button><p>Home</p></button>
-            <button class="sidepanel-selected"><p>About Me</p></button>
+            <button class="sidepanel-selected"><p>Home</p></button>
+            <a href="projects.html"><button><p>Projects</p></button></a>
+            <a href="aboutme.html"><button><p>About Me</p></button></a>
             <p id="sidepanelVersionText" class="sidepanel-version-text">Loading version info...</p>
         </div>
         <p>If you are using mobile then click hamburger button in top left if PC then navigate through webpage via left sidepanel</p>

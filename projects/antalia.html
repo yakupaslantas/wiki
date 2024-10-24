@@ -24,6 +24,12 @@
             <div onclick="triggeranim()" class="sidepanel-changelog-button" id="changelogButton">
                 <p>Changelog</p>
                 <div class="inner-changelog" id="changelogContent">
+                    <h2>v0.0.2</h2>
+                    <ul>
+                        <li>Fixed side navigation panel not working on desktop devices</li>
+                        <li>Remove unwanted margin in aboutme page</li>
+                        <li>Fix missing some options in side navigation panel</li>
+                    </ul>
                     <h2>v0.0.1</h2>
                     <ul>
                         <li>Initial release </li>
@@ -34,9 +40,9 @@
         </div>
         <div class="sidepanel">
             <h1>Navigate</h1>
-            <button><p>Home</p></button>
-            <button class="sidepanel-selected"><p>Projects</p></button>
-            <button><p>About Me</p></button>
+            <a href="../index.html"><button><p>Home</p></button></a>
+            <a href="../projects.html"><button><p>Projects</p></button></a>
+            <a href="../aboutme.html"><button><p>About Me</p></button></a>
             <p id="sidepanelVersionText" class="sidepanel-version-text">Loading version info...</p>
         </div>
         <h1 class="homepagetitle">Antaila</h1>
@@ -56,7 +62,13 @@
 
         </div>
         <div class="project-content" id="q1" style="display: none;">
-            <p>v0.0.1</p>
+            <h2>v0.0.2</h2>
+            <ul>
+                <li>Fixed side navigation panel not working on desktop devices</li>
+                <li>Remove unwanted margin in aboutme page</li>
+                <li>Fix missing some options in side navigation panel</li>
+            </ul>
+            <h2>v0.0.1</h2>
             <ul>
                 <li>Initial release</li>
             </ul>
@@ -73,7 +85,7 @@
                 </tr>
                 <tr>
                     <th>Project Version</th>
-                    <td>v0.0.1</td>
+                    <td>v0.0.2</td>
                 </tr>
                 <tr>
                     <th>Project Language</th>
