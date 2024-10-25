@@ -1,4 +1,25 @@
-var version = "0.0.2"
+var version = "0.0.3"
+
+var changelog = `
+<h2>v0.0.3 (10/25/2024)</h2>
+<ul>
+    <li>Fixed github page button not working in antalia project</li>
+    <li>Added a javascript function that update changelog screen to speed up development</li>
+    <li>Added update dates in changelog screen</li>
+    <li>Fixed typo in project codename</li>
+</ul>
+<h2>v0.0.2 (10/24/2024)</h2>
+<ul>
+    <li>Fixed side navigation panel not working on desktop devices</li>
+    <li>Remove unwanted margin in aboutme page</li>
+    <li>Fix missing some options in side navigation panel</li>
+</ul>
+<h2>v0.0.1 (10/18/2024)</h2>
+<ul>
+    <li>Initial release </li>
+</ul>
+<button onclick="closeDialog()">Close</button>
+`
 
 var sidepanelVersionText
 var sidepanelChangelogButton
@@ -65,6 +86,10 @@ function changediv(num){
     active = num
 }
 
+function update_changelog_screen(){
+    changelogContent.innerHTML = changelog
+}
+
 
 
 window.onload = function(){
@@ -75,4 +100,5 @@ window.onload = function(){
     blurOverlay = document.getElementById("blurOverlay")
     changelogContent = document.getElementById("changelogContent")
     updateSidepanelVersionText()
+    update_changelog_screen()
 }
